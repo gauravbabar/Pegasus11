@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+
+    <script>
+        function myFunction() {
+            var x, text;
+
+            // Get the value of the input field with id="numb"
+            x = document.getElementById("numb").value;
+
+            // If x is Not a Number or less than one or greater than 10
+            if (isNaN(x) || x < 1 || x > 10) {
+                text = "Input not valid";
+            } else {
+                text = "Input OK";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+
+</head>
+<body>
+        <form class="login-form" name="login" id="123" action="http://localhost/Hackathon/Login/Admin/login.php" method="post">
+                <input type="text" placeholder="username" name="uname" id="uname"><br><br>
+                <input type="password" placeholder="password" name="pass1" id="pass1"><br>
+                <a class="forget" href="http://localhost/PROJECT%20INFINITY%20F/LOGIN/forp.php">Forgot password?</a><br><br>
+
+         <button type="submit" class="login"/>LOGIN</button>
+
+    <p class="message">Not registered? <a href="#151">Create an account</a></p>
+</form>
+</body>
+</html>
